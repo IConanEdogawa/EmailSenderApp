@@ -1,10 +1,5 @@
 ﻿using EmailSenderApp.Application.Services.EmailServces;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EmailSenderApp.Application
 {

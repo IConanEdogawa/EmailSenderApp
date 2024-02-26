@@ -1,12 +1,7 @@
 ﻿using EmailSenderApp.Domain.Entites.Models;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Mail;
 
 namespace EmailSenderApp.Application.Services.EmailServces
 {
@@ -21,9 +16,9 @@ namespace EmailSenderApp.Application.Services.EmailServces
 
         public async Task SendEmailAsync(EmailModel model)
         {
-            string path = @"D:\SelfStudy\frontend\versitka\planeta\sender.html";
+            string path = @"C:\Users\dotnetbillioner\Downloads\Telegram Desktop\sender.html";
 
-            using(var stream = new StreamReader(path))
+            using (var stream = new StreamReader(path))
             {
                 model.Body = await stream.ReadToEndAsync();
             }

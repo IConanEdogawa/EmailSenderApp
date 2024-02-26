@@ -1,6 +1,5 @@
 ﻿using EmailSenderApp.Application.Services.EmailServces;
 using EmailSenderApp.Domain.Entites.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmailSenderApp.API.Controllers
@@ -19,8 +18,8 @@ namespace EmailSenderApp.API.Controllers
         [HttpPost]
         public async Task<IActionResult> SendEmail([FromBody] EmailModel model)
         {
-            
-            await _emailService.SendEmailAsync(model);  
+
+            await _emailService.SendEmailAsync(model);
 
             return Ok("Muvoffaqiyatli email yuborildi");
         }
