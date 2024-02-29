@@ -16,7 +16,7 @@ namespace EmailSenderApp.Application.Services.EmailServces
 
         public async Task SendEmailAsync(EmailModel model)
         {
-            string path = @"C:\Users\dotnetbillioner\Downloads\Telegram Desktop\sender.html";
+            string path = @"C:\Users\conan\Downloads\Telegram Desktop\sender.html";
 
             using (var stream = new StreamReader(path))
             {
